@@ -29,7 +29,6 @@ class TimeCircuitsViewController: UIViewController {
     
     var speedTimer: Timer?
     var currentSpeed: TimeInterval = 0.0
-    var stopTime: TimeInterval = 88.0
     
     //
     // MARK: - View LifeCycle
@@ -52,11 +51,6 @@ class TimeCircuitsViewController: UIViewController {
         speedTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSpeed(speedTimer:)), userInfo: nil, repeats: true)
     }
     
-//    func resetTimer() {
-//        timer?.invalidate()
-//        timer = nil
-//    }
-//    
     @objc func updateSpeed(speedTimer: Timer) {
         if currentSpeed < 88.0 {
             currentSpeed += 1.0
@@ -84,22 +78,16 @@ class TimeCircuitsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
-        #warning("Is this correct? ")
         datePickerVC.delegate = self
-        
     }
-    
-
 }
 
 //
-//MARK: - Extensions
+// MARK: - Extensions
 //
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationWasChosen(date: Date) {
         destinationLabel.text = dateFormatter.string(from: date)
     }
-    
-    
 }

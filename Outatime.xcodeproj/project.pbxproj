@@ -13,6 +13,7 @@
 		3225583922E8E76F0070B803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3225583722E8E76F0070B803 /* LaunchScreen.storyboard */; };
 		3225584522E8E8990070B803 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225584422E8E8990070B803 /* TimeCircuitsViewController.swift */; };
 		3225584722E8E8D00070B803 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225584622E8E8D00070B803 /* DatePickerViewController.swift */; };
+		3290A4EF22E9120B00C52396 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3290A4EE22E9120B00C52396 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		3225583A22E8E76F0070B803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3225584422E8E8990070B803 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		3225584622E8E8D00070B803 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		3225584822E8EAD90070B803 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = SOURCE_ROOT; };
+		3290A4EE22E9120B00C52396 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 				3225582E22E8E76E0070B803 /* AppDelegate.swift */,
 				3225583522E8E76F0070B803 /* Assets.xcassets */,
 				3225583A22E8E76F0070B803 /* Info.plist */,
-				3225584822E8EAD90070B803 /* digital-7.ttf */,
+				3290A4EE22E9120B00C52396 /* digital-7.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -154,6 +155,7 @@
 				3225583922E8E76F0070B803 /* LaunchScreen.storyboard in Resources */,
 				3225583622E8E76F0070B803 /* Assets.xcassets in Resources */,
 				3225583422E8E76E0070B803 /* Main.storyboard in Resources */,
+				3290A4EF22E9120B00C52396 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

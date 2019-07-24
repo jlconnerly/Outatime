@@ -143,13 +143,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwP-Vp-Q6k">
-                                <rect key="frame" x="0.0" y="294" width="414" height="159"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <date key="date" timeIntervalSinceReferenceDate="286404094.86645198">
-                                    <!--2010-01-28 20:41:34 +0000-->
-                                </date>
-                            </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="281" translatesAutoresizingMaskIntoConstraints="NO" id="GmF-rD-GBd">
                                 <rect key="frame" x="20" y="832" width="374" height="30"/>
                                 <subviews>
@@ -173,16 +166,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flux-Capacitor" translatesAutoresizingMaskIntoConstraints="NO" id="toM-wf-Twb">
+                                <rect key="frame" x="89" y="94" width="236" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="toM-wf-Twb" secondAttribute="height" multiplier="1:1" id="06k-Cl-zpe"/>
+                                </constraints>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwP-Vp-Q6k">
+                                <rect key="frame" x="0.0" y="400" width="414" height="216"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="286404094.86645198">
+                                    <!--2010-01-28 20:41:34 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="trailing" secondItem="Lnx-l2-we9" secondAttribute="trailing" id="3vr-3W-d1S"/>
-                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="leading" secondItem="Lnx-l2-we9" secondAttribute="leading" id="7uf-wG-HFY"/>
-                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="top" secondItem="Lnx-l2-we9" secondAttribute="top" constant="250" id="Ddu-96-ORU"/>
                             <constraint firstItem="GmF-rD-GBd" firstAttribute="bottom" secondItem="Lnx-l2-we9" secondAttribute="bottom" id="J3k-F3-tER"/>
+                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="leading" secondItem="Lnx-l2-we9" secondAttribute="leading" id="Rgi-s6-BVM"/>
                             <constraint firstItem="GmF-rD-GBd" firstAttribute="leading" secondItem="Lnx-l2-we9" secondAttribute="leading" constant="20" id="XYB-GH-q9g"/>
+                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="trailing" secondItem="Lnx-l2-we9" secondAttribute="trailing" id="YLl-z6-v72"/>
+                            <constraint firstItem="toM-wf-Twb" firstAttribute="top" secondItem="Lnx-l2-we9" secondAttribute="top" constant="50" id="YNJ-Kz-QG0"/>
+                            <constraint firstItem="rwP-Vp-Q6k" firstAttribute="top" secondItem="toM-wf-Twb" secondAttribute="bottom" constant="70" id="aEC-Bh-2aZ"/>
                             <constraint firstItem="Lnx-l2-we9" firstAttribute="trailing" secondItem="GmF-rD-GBd" secondAttribute="trailing" constant="20" id="dek-1l-QDA"/>
-                            <constraint firstItem="GmF-rD-GBd" firstAttribute="top" secondItem="rwP-Vp-Q6k" secondAttribute="bottom" constant="379" id="qKM-2S-Vng"/>
+                            <constraint firstItem="Lnx-l2-we9" firstAttribute="trailing" secondItem="toM-wf-Twb" secondAttribute="trailing" constant="89" id="lX5-YJ-eyl"/>
+                            <constraint firstItem="toM-wf-Twb" firstAttribute="leading" secondItem="Lnx-l2-we9" secondAttribute="leading" constant="89" id="wka-sC-aIm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lnx-l2-we9"/>
                     </view>
@@ -192,7 +200,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53t-Jp-sRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="19"/>
+            <point key="canvasLocation" x="902.89855072463774" y="18.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Flux-Capacitor" width="1280" height="1280"/>
+    </resources>
 </document>
