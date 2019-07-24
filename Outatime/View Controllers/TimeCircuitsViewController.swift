@@ -21,7 +21,7 @@ class TimeCircuitsViewController: UIViewController {
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd, yyyy"
+        formatter.dateFormat = "MMM  dd  yyyy"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         return formatter
@@ -61,7 +61,7 @@ class TimeCircuitsViewController: UIViewController {
                   let newPresentTime = destinationLabel.text else { return }
             lastDepartedLabel.text = lastTime
             presentTimeLabel.text = newPresentTime
-            destinationLabel.text = "--- -- ----"
+            destinationLabel.text = "---  --  ----"
             speedLabel.text = "0 MPH"
             currentSpeed = 0.0
             let alert = UIAlertController(title: "Time Travel Successful", message: "You're new dats is \(newPresentTime).", preferredStyle: .alert)
