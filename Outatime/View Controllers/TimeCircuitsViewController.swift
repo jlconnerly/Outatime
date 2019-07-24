@@ -47,18 +47,19 @@ class TimeCircuitsViewController: UIViewController {
         
     }
 
-    /*
+    
      
     //
     // MARK: - Navigation
     //
-     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
+        #warning("Is this correct? ")
+        datePickerVC.delegate = self
+        
     }
-    */
+    
 
 }
 
@@ -68,7 +69,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationWasChosen(date: Date) {
-        //TODO
+        destinationLabel.text = dateFormatter.string(from: date)
     }
     
     

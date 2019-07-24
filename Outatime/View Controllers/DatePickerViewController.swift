@@ -40,6 +40,8 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func doneButtonTapped(_ sender: UIButton) {
+        delegate?.destinationWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     
 
