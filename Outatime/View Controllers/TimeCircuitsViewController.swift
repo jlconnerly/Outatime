@@ -58,16 +58,19 @@ class TimeCircuitsViewController: UIViewController {
 //    }
 //    
     @objc func updateSpeed(speedTimer: Timer) {
-        if currentSpeed <= 5.0 {
+        if currentSpeed < 88.0 {
             currentSpeed += 1.0
             speedLabel.text = "\(currentSpeed) MPH"
         }else {
             speedTimer.invalidate()
-            
+            guard let lastTime = presentTimeLabel.text,
+                  let newPresentTime = destinationLabel.text else { return }
+            lastDepartedLabel.text = lastTime
+            presentTimeLabel.text = newPresentTime
             destinationLabel.text = "--- -- ----"
             speedLabel.text = "0 MPH"
             currentSpeed = 0.0
-            let alert = UIAlertController(title: "Time Travel Successful", message: "You're new dats is \(presentTimeLabel.text).", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Time Travel Successful", message: "You're new dats is \(newPresentTime).", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Great Scott!", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
