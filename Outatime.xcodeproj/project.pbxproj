@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3225582F22E8E76E0070B803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225582E22E8E76E0070B803 /* AppDelegate.swift */; };
-		3225583122E8E76E0070B803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225583022E8E76E0070B803 /* ViewController.swift */; };
 		3225583422E8E76E0070B803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3225583222E8E76E0070B803 /* Main.storyboard */; };
 		3225583622E8E76F0070B803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3225583522E8E76F0070B803 /* Assets.xcassets */; };
 		3225583922E8E76F0070B803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3225583722E8E76F0070B803 /* LaunchScreen.storyboard */; };
+		3225584522E8E8990070B803 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225584422E8E8990070B803 /* TimeCircuitsViewController.swift */; };
+		3225584722E8E8D00070B803 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225584622E8E8D00070B803 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3225582B22E8E76E0070B803 /* Outatime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outatime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3225582E22E8E76E0070B803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3225583022E8E76E0070B803 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3225583322E8E76E0070B803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3225583522E8E76F0070B803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3225583822E8E76F0070B803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3225583A22E8E76F0070B803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3225584422E8E8990070B803 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		3225584622E8E8D00070B803 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		3225584822E8EAD90070B803 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +57,40 @@
 		3225582D22E8E76E0070B803 /* Outatime */ = {
 			isa = PBXGroup;
 			children = (
-				3225582E22E8E76E0070B803 /* AppDelegate.swift */,
-				3225583022E8E76E0070B803 /* ViewController.swift */,
-				3225583222E8E76E0070B803 /* Main.storyboard */,
-				3225583522E8E76F0070B803 /* Assets.xcassets */,
-				3225583722E8E76F0070B803 /* LaunchScreen.storyboard */,
-				3225583A22E8E76F0070B803 /* Info.plist */,
+				3225584322E8E84D0070B803 /* View Controllers */,
+				3225584222E8E83B0070B803 /* View */,
+				3225584122E8E82D0070B803 /* Resources */,
 			);
 			path = Outatime;
+			sourceTree = "<group>";
+		};
+		3225584122E8E82D0070B803 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3225582E22E8E76E0070B803 /* AppDelegate.swift */,
+				3225583522E8E76F0070B803 /* Assets.xcassets */,
+				3225583A22E8E76F0070B803 /* Info.plist */,
+				3225584822E8EAD90070B803 /* digital-7.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3225584222E8E83B0070B803 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3225583222E8E76E0070B803 /* Main.storyboard */,
+				3225583722E8E76F0070B803 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3225584322E8E84D0070B803 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3225584422E8E8990070B803 /* TimeCircuitsViewController.swift */,
+				3225584622E8E8D00070B803 /* DatePickerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3225583122E8E76E0070B803 /* ViewController.swift in Sources */,
+				3225584522E8E8990070B803 /* TimeCircuitsViewController.swift in Sources */,
 				3225582F22E8E76E0070B803 /* AppDelegate.swift in Sources */,
+				3225584722E8E8D00070B803 /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM84C6XKT7;
-				INFOPLIST_FILE = Outatime/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Outatime/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM84C6XKT7;
-				INFOPLIST_FILE = Outatime/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Outatime/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
